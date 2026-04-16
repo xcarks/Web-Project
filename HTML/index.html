@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | EFREI Computer Science</title>
-    <link rel= "stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
     <header>
-        <a href="./index.html"><img width="400" height="150" src="../IMG/EFREI_logo.jpg" alt="EFREI_logo" /></a>
+        <a href="./index.html"><img width="400" height="150" src="../IMG/EFREI_logo.png" alt="EFREI_logo" /></a>
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -19,35 +20,69 @@
     </header>
 
     <main>
-        <section>
-            <div>
+        <section class="hero">
+            <div class="hero-overlay">
                 <h1>COMPUTER SCIENCE DEPARTMENT</h1>
                 <p>The leading school for generalist engineers and digital experts.</p>
             </div>
         </section>
 
-        <section>
+        <section class="department-info">
             <h2>Welcome to our Department</h2>
-            <p>Our program applies knowledge from lectures to real-world interactive projects.</p>
-            <ul>
-                <li>Responsive Web Design</li>
-                <li>Dynamic JavaScript Features</li>
-                <li>W3C Validated Pages</li>
-            </ul>
+
+            <div class="info-block image-right">
+                <div class="info-text">
+                    <p>The Computer Science Department at EFREI Paris is a dynamic hub for education and innovation, dedicated to training the next generation of engineers in a technology-driven world. The department combines strong theoretical foundations with hands-on experience in key areas such as software engineering, artificial intelligence, data science, cybersecurity, and distributed systems.</p>
+                </div>
+                <div class="info-image">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Cybersecurity and Tech">
+                </div>
+            </div>
+
+            <div class="info-block image-left">
+                <div class="info-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Students collaborating">
+                </div>
+                <div class="info-text">
+                    <p>Over the years, the department has continuously evolved alongside the rapid advancements of the digital industry, adapting its programs to meet emerging technological challenges. Through close partnerships with leading companies and startups, students engage in real-world projects that enhance both their technical expertise and professional readiness.</p>
+                </div>
+            </div>
+
+            <div class="info-block image-right">
+                <div class="info-text">
+                    <p>The teaching approach emphasizes innovation, collaboration, and problem-solving. Through project-based learning, hackathons, and work-study programs, students develop not only technical skills but also essential soft skills required in today’s global tech environment.</p>
+                </div>
+                <div class="info-image">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Innovation and problem solving">
+                </div>
+            </div>
+
+            <div class="info-block image-left">
+                <div class="info-image">
+                    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80" alt="Highly skilled professionals">
+                </div>
+                <div class="info-text">
+                    <p>Today, the department plays a key role in shaping highly skilled professionals, actively contributing to the digital ecosystem at both national and international levels.</p>
+                </div>
+            </div>
         </section>
 
         <section>
-            <h2>News</h2>
-            <div>
-                <div >
-                    <div>
-                        <h3>New Campus in Bordeaux</h3>
-                        <p>Join us at our new state-of-the-art facilities.</p>
+            <h2 style="text-align: center;">Latest News</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <h3>New Campus in Villejuif</h3>
+                        <p>Join us at our new campus NEW REPUBLIC.</p>
                     </div>
-                    <div>
+                    <div class="carousel-item">
                         <h3>Upcoming Hackathon</h3>
                         <p>Showcase your creativity and win rewards.</p>
                     </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevBtn">&#10094;</button>
+                    <button class="carousel-btn" id="nextBtn">&#10095;</button>
                 </div>
             </div>
         </section>
@@ -55,7 +90,8 @@
 
     <footer>
         <p>&copy; 2025-2026 EFREI Computer Science Department.</p>
-        <p>Learn more about the project team</p>
+        <p><a href="about.html">Learn more about the project team</a></p>
     </footer>
+    <script src="../JS/script.js"></script>
 </body>
 </html>
