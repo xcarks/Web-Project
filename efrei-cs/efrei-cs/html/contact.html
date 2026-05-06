@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — EFREI Computer Science</title>
+  <meta name="description" content="Get in touch with the EFREI Paris Computer Science Department for admissions, partnerships, or general inquiries." />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <div class="logo-mark">CS</div>
+      <div class="logo-text"><strong>EFREI Paris</strong><span>Computer Science</span></div>
+    </a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="programs.html">Programs</a>
+      <a class="nav-link" href="campus-life.html">Campus Life</a>
+      <a class="nav-link" href="research.html">Research</a>
+      <a class="nav-link active" href="contact.html">Contact</a>
+      <a class="nav-link nav-cta" href="contact.html">Apply Now</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobileNav">
+  <a class="nav-link" href="index.html">Home</a>
+  <a class="nav-link" href="programs.html">Programs</a>
+  <a class="nav-link" href="campus-life.html">Campus Life</a>
+  <a class="nav-link" href="research.html">Research</a>
+  <a class="nav-link active" href="contact.html">Contact</a>
+  <a class="nav-link nav-cta" href="contact.html">Apply Now</a>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <div class="section-label">Get In Touch</div>
+    <h1 class="page-title">We're Here to Help</h1>
+    <p class="page-sub">Whether you're a prospective student, industry partner, or researcher — our team is ready to answer your questions.</p>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- LEFT: INFO -->
+      <div class="reveal">
+        <h3>Contact Information</h3>
+        <p style="color:var(--muted);font-size:0.92rem;line-height:1.75;margin-bottom:32px;">
+          Our admissions office is available Monday to Friday, 9:00 AM – 5:30 PM (CET).
+          Response times are typically within 2 business days.
+        </p>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div class="contact-detail-text">
+            <strong>Campus Address</strong>
+            <span>30-32 Avenue de la République<br>94800 Villejuif, Île-de-France, France</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📞</div>
+          <div class="contact-detail-text">
+            <strong>Phone</strong>
+            <span>+33 (0)1 46 77 46 77</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📧</div>
+          <div class="contact-detail-text">
+            <strong>Email — Admissions</strong>
+            <span>admissions@efrei.fr</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">🔬</div>
+          <div class="contact-detail-text">
+            <strong>Email — Research</strong>
+            <span>research@efrei.fr</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">🤝</div>
+          <div class="contact-detail-text">
+            <strong>Email — Partnerships</strong>
+            <span>partnerships@efrei.fr</span>
+          </div>
+        </div>
+
+        <!-- Map placeholder -->
+        <div class="map-placeholder">
+          <span style="font-size:2.5rem;">📍</span>
+          <span>EFREI Paris — Villejuif Campus</span>
+          <span style="font-size:0.8rem;opacity:0.6;">30-32 Avenue de la République, 94800 Villejuif</span>
+          <a href="https://maps.google.com/?q=EFREI+Paris+Villejuif" target="_blank" rel="noopener noreferrer"
+            style="color:var(--accent);font-size:0.85rem;margin-top:4px;text-decoration:underline;">
+            View on Google Maps ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: FORM -->
+      <div class="reveal">
+        <div class="contact-form">
+          <h3 class="form-title">Send Us a Message</h3>
+
+          <div class="form-success" id="formSuccess">
+            ✅ <strong>Message sent successfully!</strong><br>
+            Thank you for reaching out. Our team will respond within 2 business days.
+          </div>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Jean" autocomplete="given-name" />
+                <span class="form-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Dupont" autocomplete="family-name" />
+                <span class="form-error"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="jean.dupont@example.com" autocomplete="email" />
+              <span class="form-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject">
+                <option value="">— Select a topic —</option>
+                <option value="admissions">Admissions Inquiry</option>
+                <option value="programs">Programs & Curriculum</option>
+                <option value="research">Research Collaboration</option>
+                <option value="partnership">Industry Partnership</option>
+                <option value="apprenticeship">Apprenticeship / Internship</option>
+                <option value="phd">PhD Application</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="form-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" placeholder="Tell us how we can help you… (minimum 20 characters)" rows="5"></textarea>
+              <span class="form-error"></span>
+            </div>
+
+            <div class="form-group" style="display:flex;align-items:flex-start;gap:10px;margin-bottom:24px;">
+              <input type="checkbox" id="privacy" style="width:18px;height:18px;margin-top:2px;accent-color:var(--accent);flex-shrink:0;" />
+              <label for="privacy" style="font-size:0.82rem;color:var(--muted);cursor:pointer;line-height:1.6;">
+                I agree to EFREI's <a href="#" style="color:var(--accent);">Privacy Policy</a> and consent to being contacted regarding my inquiry.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:15px;">
+              Send Message →
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="reveal" style="max-width:720px;margin:0 auto;">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Common Questions</h2>
+
+      <div class="accordion" style="margin-top:36px;">
+        <div class="accordion-item open">
+          <div class="accordion-header"><h4>When do applications open for the next academic year?</h4><div class="accordion-icon">+</div></div>
+          <div class="accordion-body">Applications for the 2025–2026 academic year open in October 2024 on Parcoursup (for bachelor's level) and directly on the EFREI website for Master's programs. We strongly recommend applying early as competitive programs fill quickly.</div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header"><h4>What are the language requirements for international applicants?</h4><div class="accordion-icon">+</div></div>
+          <div class="accordion-body">For French-language programs, a minimum DELF B2 (or equivalent) is required. For English-taught Master's programs, a TOEFL iBT score of 90+ or IELTS 6.5+ is expected. Non-native English speakers must provide official test scores.</div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header"><h4>Is there financial aid available?</h4><div class="accordion-icon">+</div></div>
+          <div class="accordion-body">Yes. EFREI offers merit scholarships covering 20–100% of tuition fees, French government grants (CROUS), and social scholarships. The apprenticeship program also allows students to offset tuition costs with their salary. Contact admissions for a personalized assessment.</div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header"><h4>Can I visit the campus before applying?</h4><div class="accordion-icon">+</div></div>
+          <div class="accordion-body">Absolutely! We organize open days (Journées Portes Ouvertes) in November, January, and March. Individual campus tours can also be arranged by appointment. Online virtual tours are available year-round on our website.</div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header"><h4>How do I find an apprenticeship host company?</h4><div class="accordion-icon">+</div></div>
+          <div class="accordion-body">EFREI's Career Center actively supports students in their apprenticeship search. We organize dedicated "Alternance Fair" events, provide a curated job board, and connect students with our 120+ partner companies. The school does not guarantee placement, but our support team has a strong track record.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html"><div class="logo-mark">CS</div><div class="logo-text"><strong>EFREI Paris</strong><span>Computer Science</span></div></a>
+        <p class="footer-tagline">Grande École d'Ingénieurs forming the digital leaders of tomorrow since 1987.</p>
+      </div>
+      <div class="footer-col"><h4>Programs</h4><a href="programs.html">Bachelor's Degree</a><a href="programs.html">Master's Degree</a><a href="programs.html">Apprenticeship</a><a href="programs.html">Exchange Programs</a></div>
+      <div class="footer-col"><h4>Discover</h4><a href="campus-life.html">Campus Life</a><a href="research.html">Research</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Info</h4><a href="#">Admissions</a><a href="#">Scholarships</a><a href="#">Career Services</a><a href="about.html">The Team</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 EFREI Paris — Computer Science Department</span><span>Built with ❤️ by <a href="about.html">our team</a></span></div>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
